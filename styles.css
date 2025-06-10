@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #05ad2a;
+  --secondary-color: #025c17;
+  --form-bg: #ffffff;
+  --text-color: hsl(0, 0%, 0%);
+  --hover-color: #1d2703;
+  --input-border: #ccc;
+  --input-radius: 4px;
+}
+
+body {
+  
+  background: linear-gradient(#409f56, var(--primary-color));
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  margin: 0;
+
+}
+
+form {
+  display: block;
+  background-color: var(--form-bg);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+ ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+a{
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-radius);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease-in;
+  
+}
+
+
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+.signin-link {
+  
+  text-align: center;
+  margin-top: 10px;
+  
+}
+
+a {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+  padding: 10px10px;
+  border-radius: 40px;
+  display: inline-block;
+}
+a:hover {
+  color:var(--hover-color)
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 2.5em;
+  transition: color 2s;
+}
+
+h1:hover {
+  color: var(--hover-color);
+}
+
+.form {
+  font-size: 1.2em;
+  text-align: left;
+  color: var(--text-color);
+  transition: color 2s ease-in-out;
+}
+
+.form:hover {
+  color: var(--primary-color);
+}
+
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="password"]:hover 
+{
+  transform: scale(1.02);
+  box-shadow: 0 0 8px 1px var(--primary-color);
+  border-color: var(--primary-color);
+}
