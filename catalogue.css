@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Form container styling */
+form {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+/* Inputs and select */
+form input[type="text"],
+form select,
+form textarea,
+form input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+/* Textarea specific spacing */
+form textarea {
+  resize: vertical;
+  margin-bottom: 0.5rem;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #333;
+}
